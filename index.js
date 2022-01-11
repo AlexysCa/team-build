@@ -5,6 +5,10 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+// array for data to be pushed and help in
+
+var workTeam = []
+
 // inquirer prompt for initial command-line user input with info for HTML 
 const main = () => {
   inquirer
@@ -33,7 +37,7 @@ const main = () => {
 ])  
 .then((data) => {
     let manager = new Manager(data.name, data.id, data.email, data.office);
-    push(manager);
+    workTeam.push(manager);
     addTeammate();  
 });
 };
@@ -87,7 +91,7 @@ const addEngineer = () => {
 ])
 .then((data) => {
     let engineer = new Engineer(data.name, data.id, data.email, data.github);
-    push(engineer);
+    workTeam.push(engineer);
     addTeammate();
 })
 };
@@ -119,7 +123,7 @@ const addIntern = () => {
 ])
 .then((data) => {
     let intern = new Intern(data.name, data.id, data.email, data.school);
-    push(intern);
+    workTeam.push(intern);
     addTeammate();
 })
 };
