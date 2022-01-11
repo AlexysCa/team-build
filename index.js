@@ -9,13 +9,13 @@ const main = () => {
 {
     type: 'input',
     message: 'Enter your team manager`s name.',
-    name: 'teamManager',
+    name: 'name',
 },
 {
 
     type: 'input',
     message: 'Enter your employee ID.',
-    name: 'employeeID',
+    name: 'id',
 },
 {
     type: 'input',
@@ -64,22 +64,22 @@ const addEngineer = () => {
 {
     type: 'input',
     message: 'Enter Engineer`s name.',
-    name: 'engineer',
+    name: 'name',
 },
 {
     type: 'input',
     message: 'Enter employee ID.',
-    name: 'engineerID',
+    name: 'id',
 },
 {
     type: 'input',
     message: 'Enter email address.',
-    name: 'engineerEmail',
+    name: 'email',
 },
 {
     type: 'input',
     message: 'Enter GitHub username.',
-    name: 'engineerGithub',
+    name: 'github',
 },
 ])
 .then((data) => {
@@ -96,17 +96,17 @@ const addIntern = () => {
 {
     type: 'input',
     message: 'Enter Intern`s name.',
-    name: 'intern',
+    name: 'name',
 },
 {   type: 'input',
     message: 'Enter employee ID.',
-    name: 'interID',
+    name: 'id',
 
 },
 {
     type: 'input',
     message: 'Enter email address.',
-    name: 'internEmail',
+    name: 'email',
 },
 {
     type: 'input',
