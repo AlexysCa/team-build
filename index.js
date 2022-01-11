@@ -29,7 +29,7 @@ const main = () => {
 },
 ])  
 .then((data) => {
-    let manager = new Manager(data.teamManager, data.employeeID, data.email, data.office);
+    let manager = new Manager(data.name, data.id, data.email, data.office);
     push(manager);
     addTeammate();  
 });
@@ -83,7 +83,7 @@ const addEngineer = () => {
 },
 ])
 .then((data) => {
-    let engineer = new Engineer(data.engineer, data.engineerID, data.engineerEmail, data.engineerGithub);
+    let engineer = new Engineer(data.name, data.id, data.email, data.github);
     push(engineer);
     addTeammate();
 })
@@ -115,7 +115,7 @@ const addIntern = () => {
 }    
 ])
 .then((data) => {
-    let intern = new Intern(data.intern, data.internID, data.internEmail, data.school);
+    let intern = new Intern(data.name, data.id, data.email, data.school);
     push(intern);
     addTeammate();
 })
