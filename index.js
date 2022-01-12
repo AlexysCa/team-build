@@ -4,6 +4,7 @@ const fs = require('fs');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const createHtml = require('./src/Html');
 
 // array for data to be pushed and help in
 
@@ -60,6 +61,7 @@ const addTeammate = () => {
             addIntern();
         } else {
             console.log('HTML document was created! Check dist/ folder.');
+            render();
         }
     })
 };
@@ -128,6 +130,12 @@ const addIntern = () => {
 })
 };
 
+const render = () => {
+    let renderedHtml = createHtml(workTeam);
+    fs.writeFileSync('./dist/index.html', renderedHtml, function(err) {
+
+    })
+}
 
 // main funcation call 
 main();
