@@ -12,7 +12,7 @@ const createHtml = workTeam => {
 
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${workTeam[i].id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${workTeam[i].email}>${workTeam[i].email}</a></li>
+                <li class="list-group-item">Email: <a href="mailto:${workTeam[i].email}">${workTeam[i].email}</a></li>
                 <li class="list-group-item">Office Number: ${workTeam[i].office}</li>
             </ul>
             </div>`)
@@ -20,22 +20,22 @@ const createHtml = workTeam => {
         } else if (workTeam[i].getRole() === 'Engineer') {
             teamCards.push(` <div class="card" style="width: 18rem; display: inline-block">
             <div class="card-header bg-success">
-                <p class= "test-light">Name: ${workTeam[i].name}</p>
+                <p class= "text-light">Name: ${workTeam[i].name}</p>
                 <p class= "text-light">Engineer</p>
             </div>
 
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${workTeam[i].id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${workTeam[i].email}>${workTeam[i].email}</a></li>
+                <li class="list-group-item">Email: <a href="mailto:${workTeam[i].email}">${workTeam[i].email}</a></li>
                 <li class="list-group-item">GitHub: <a href="https://github.com/${workTeam[i].github}" target="_blank">${workTeam[i].github}</a></li>
             </ul>
             </div>`)
 // Intern card HTML code here
         } else {
             teamCards.push(` <div class="card" style="width: 18rem; display: inline-block">
-            <div class="card-header bg-success">
+            <div class="card-header bg-warning">
                 <p class="text-dark">Name: ${workTeam[i].name}</p>
-                <p class="test-dark">Intern</p>
+                <p class="text-dark">Intern</p>
             </div>
 
             <ul class="list-group list-group-flush">
