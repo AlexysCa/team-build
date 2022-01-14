@@ -10,6 +10,7 @@ Application also uses testing to maintain code and provide accuracy.
 * Jest
 
 ## Application Walk-through Video:
+https://watch.screencastify.com/v/jebrSNSYCbF1zGlQIdOV 
 
 
 ### Example of Command-line:
